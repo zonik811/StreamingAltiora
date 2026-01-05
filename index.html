@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Compra cuentas de streaming premium a los mejores precios en Colombia. Netflix, Spotify, YouTube Premium, Disney+, HBO Max y más.">
+    <title>StreamPlus | Cuentas de Streaming Premium Colombia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="logo">
+                <span class="logo-icon">▶</span>
+                StreamPlus
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                <li><a href="#beneficios" class="nav-link">Beneficios</a></li>
+                <li><a href="#testimonios" class="nav-link">Testimonios</a></li>
+                <li><a href="#faq" class="nav-link">FAQ</a></li>
+            </ul>
+            <a href="#contacto" class="btn btn-primary btn-nav">Contactar</a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-bg"></div>
+        <div class="container hero-content">
+            <span class="hero-badge">🔥 Ofertas Especiales</span>
+            <h1 class="hero-title">
+                Tus Cuentas de
+                <span class="gradient-text">Streaming</span>
+                al Mejor Precio
+            </h1>
+            <p class="hero-subtitle">
+                Netflix, Spotify, YouTube Premium, Disney+ y mucho más.
+                Acceso inmediato, soporte 24/7 y garantía incluida.
+            </p>
+            <div class="hero-buttons">
+                <a href="#servicios" class="btn btn-primary btn-lg">
+                    Ver Catálogo
+                    <span class="btn-icon">→</span>
+                </a>
+                <a href="#beneficios" class="btn btn-outline btn-lg">
+                    ¿Por qué elegirnos?
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">10K+</span>
+                    <span class="stat-label">Clientes Felices</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">50K+</span>
+                    <span class="stat-label">Cuentas Vendidas</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Soporte</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios/Catálogo -->
+    <section class="services" id="servicios">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Nuestros Servicios</span>
+                <h2 class="section-title">Catálogo de Cuentas Premium</h2>
+                <p class="section-subtitle">Elige tu plataforma favorita y disfruta del mejor entretenimiento</p>
+            </div>
+            <div class="services-grid">
+                <!-- Netflix -->
+                <div class="service-card" data-service="netflix">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="service-icon netflix-bg">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M5.398 0v24l6.87-6.774V6.654l5.334 17.346h.028L24 0v24c-3.82-.018-6.976-2.864-7.22-6.54L12.18 6.654v10.56L5.398 24V0z" />
+                            </svg>
+                        </div>
+                        <h3 class="service-name">Netflix</h3>
+                        <p class="service-desc">Acceso completo a películas, series y documentales en 4K Ultra HD</p>
+                        <ul class="service-features">
+                            <li>✓ Pantalla Premium 4K</li>
+                            <li>✓ Sin anuncios</li>
+                            <li>✓ Descargas offline</li>
+                        </ul>
+                        <div class="pricing-options">
+                            <div class="price-option" data-period="1">
+                                <span class="period">1 Mes</span>
+                                <span class="price">$9.000 COP</span>
+                            </div>
+                            <div class="price-option" data-period="2">
+                                <span class="period">2 Meses</span>
+                                <span class="price">$15.000 COP</span>
+                            </div>
+                            <div class="price-option best-value" data-period="12">
+                                <span class="best-tag">Mejor Precio</span>
+                                <span class="period">1 Año</span>
+                                <span class="price">$80.000 COP</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary btn-block" onclick="openModal('Netflix')">
+                            Comprar Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Spotify -->
+                <div class="service-card" data-service="spotify">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="service-icon spotify-bg">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z" />
+                            </svg>
+                        </div>
+                        <h3 class="service-name">Spotify Premium</h3>
+                        <p class="service-desc">Música sin límites, sin anuncios y con la mejor calidad de audio</p>
+                        <ul class="service-features">
+                            <li>✓ Audio de alta calidad</li>
+                            <li>✓ Sin anuncios</li>
+                            <li>✓ Modo offline</li>
+                        </ul>
+                        <div class="pricing-options">
+                            <div class="price-option" data-period="1">
+                                <span class="period">1 Mes</span>
+                                <span class="price">$9.000 COP</span>
+                            </div>
+                            <div class="price-option" data-period="2">
+                                <span class="period">2 Meses</span>
+                                <span class="price">$15.000 COP</span>
+                            </div>
+                            <div class="price-option best-value" data-period="12">
+                                <span class="best-tag">Mejor Precio</span>
+                                <span class="period">1 Año</span>
+                                <span class="price">$80.000 COP</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary btn-block" onclick="openModal('Spotify Premium')">
+                            Comprar Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- YouTube Premium -->
+                <div class="service-card featured" data-service="youtube">
+                    <div class="card-badge">Más Vendido</div>
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="service-icon youtube-bg">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                            </svg>
+                        </div>
+                        <h3 class="service-name">YouTube Premium</h3>
+                        <p class="service-desc">Videos sin anuncios, YouTube Music y reproducción en segundo plano</p>
+                        <ul class="service-features">
+                            <li>✓ Sin anuncios</li>
+                            <li>✓ YouTube Music incluido</li>
+                            <li>✓ Reproducción offline</li>
+                        </ul>
+                        <div class="pricing-options">
+                            <div class="price-option" data-period="1">
+                                <span class="period">1 Mes</span>
+                                <span class="price">$9.000 COP</span>
+                            </div>
+                            <div class="price-option" data-period="2">
+                                <span class="period">2 Meses</span>
+                                <span class="price">$15.000 COP</span>
+                            </div>
+                            <div class="price-option best-value" data-period="12">
+                                <span class="best-tag">Mejor Precio</span>
+                                <span class="period">1 Año</span>
+                                <span class="price">$80.000 COP</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary btn-block" onclick="openModal('YouTube Premium')">
+                            Comprar Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Disney+ -->
+                <div class="service-card" data-service="disney">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="service-icon disney-bg">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M1.51 8.93c-.32.18-.32.56 0 .74l5.03 3.03c.32.18.75.18 1.08 0l5.03-3.03c.32-.18.32-.56 0-.74L7.62 5.9c-.33-.18-.76-.18-1.08 0L1.51 8.93zm10.38 1.27l2.03-1.22 5.57 3.42c.32.18.32.56 0 .74l-5.03 3.03c-.33.18-.76.18-1.08 0l-1.49-.9v-5.07zm-.54 6.72l-3.73-2.24v4.88c0 .36.42.59.75.41l2.98-1.74v-1.31zm5.76-3.46l2.03-1.22 3.35 2.03c.32.18.32.56 0 .74l-5.03 3.03c-.33.18-.76.18-1.08 0l-.65-.39v-4.19h1.38z" />
+                            </svg>
+                        </div>
+                        <h3 class="service-name">Disney+</h3>
+                        <p class="service-desc">Marvel, Star Wars, Pixar, National Geographic y clásicos Disney</p>
+                        <ul class="service-features">
+                            <li>✓ Contenido 4K HDR</li>
+                            <li>✓ 4 dispositivos</li>
+                            <li>✓ Perfiles para niños</li>
+                        </ul>
+                        <div class="pricing-options">
+                            <div class="price-option" data-period="1">
+                                <span class="period">1 Mes</span>
+                                <span class="price">$9.000 COP</span>
+                            </div>
+                            <div class="price-option" data-period="2">
+                                <span class="period">2 Meses</span>
+                                <span class="price">$15.000 COP</span>
+                            </div>
+                            <div class="price-option best-value" data-period="12">
+                                <span class="best-tag">Mejor Precio</span>
+                                <span class="period">1 Año</span>
+                                <span class="price">$80.000 COP</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary btn-block" onclick="openModal('Disney+')">
+                            Comprar Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- HBO Max -->
+                <div class="service-card" data-service="hbo">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="service-icon hbo-bg">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M7.042 16.896H4.414v-3.754H2.708v3.754H.01v-9.92h2.698v3.502h1.706V6.976h2.628v9.92zm6.594-6.008c-.4-.22-.848-.33-1.344-.33-.496 0-.944.11-1.344.33-.4.22-.712.528-.936.924-.224.396-.336.852-.336 1.368 0 .516.112.972.336 1.368.224.396.536.704.936.924.4.22.848.33 1.344.33.496 0 .944-.11 1.344-.33.4-.22.712-.528.936-.924.224-.396.336-.852.336-1.368 0-.516-.112-.972-.336-1.368-.224-.396-.536-.704-.936-.924zm0 4.356c-.224.132-.48.198-.768.198-.288 0-.544-.066-.768-.198-.224-.132-.4-.316-.528-.552-.128-.236-.192-.508-.192-.816 0-.308.064-.58.192-.816.128-.236.304-.42.528-.552.224-.132.48-.198.768-.198.288 0 .544.066.768.198.224.132.4.316.528.552.128.236.192.508.192.816 0 .308-.064.58-.192.816-.128.236-.304.42-.528.552zm10.296-7.244v9.92h-2.628v-3.754h-1.706v3.754h-2.698v-9.92h2.698v3.502h1.706V8z" />
+                            </svg>
+                        </div>
+                        <h3 class="service-name">HBO Max</h3>
+                        <p class="service-desc">Series exclusivas, películas de Warner Bros y estrenos de cine</p>
+                        <ul class="service-features">
+                            <li>✓ Estrenos de cine</li>
+                            <li>✓ Series originales</li>
+                            <li>✓ Calidad 4K</li>
+                        </ul>
+                        <div class="pricing-options">
+                            <div class="price-option" data-period="1">
+                                <span class="period">1 Mes</span>
+                                <span class="price">$9.000 COP</span>
+                            </div>
+                            <div class="price-option" data-period="2">
+                                <span class="period">2 Meses</span>
+                                <span class="price">$15.000 COP</span>
+                            </div>
+                            <div class="price-option best-value" data-period="12">
+                                <span class="best-tag">Mejor Precio</span>
+                                <span class="period">1 Año</span>
+                                <span class="price">$80.000 COP</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary btn-block" onclick="openModal('HBO Max')">
+                            Comprar Ahora
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Prime Video -->
+                <div class="service-card" data-service="prime">
+                    <div class="card-glow"></div>
+                    <div class="card-content">
+                        <div class="service-icon prime-bg">
+                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M1.8 13.8c-.2-.3-.1-.7.2-.9.3-.2.7-.1.9.2 2.4 3.6 7.5 6.1 13.2 6.1 3.9 0 7.4-1.1 10.1-2.9.3-.2.7-.1.9.2.2.3.1.7-.2.9-2.9 2-6.7 3.1-10.8 3.1-6.1 0-11.7-2.7-14.3-6.7zM22.4 16c.3-.1.5-.4.4-.7-.1-.3-.4-.5-.7-.4l-2.3.6.6-2.3c.1-.3-.1-.6-.4-.7-.3-.1-.6.1-.7.4l-.9 3.5 3.5-.9c.2 0 .4-.2.5-.5zM12 3c-4.5 0-8.1 2.5-8.1 5.5 0 3.1 3.6 5.5 8.1 5.5s8.1-2.5 8.1-5.5c0-3.1-3.6-5.5-8.1-5.5zm0 9.7c-3.7 0-6.7-1.9-6.7-4.2 0-2.3 3-4.2 6.7-4.2s6.7 1.9 6.7 4.2c0 2.3-3 4.2-6.7 4.2z" />
+                            </svg>
+                        </div>
+                        <h3 class="service-name">Prime Video</h3>
+                        <p class="service-desc">Películas, series originales Amazon y contenido exclusivo</p>
+                        <ul class="service-features">
+                            <li>✓ Series originales</li>
+                            <li>✓ Deportes en vivo</li>
+                            <li>✓ Sin anuncios</li>
+                        </ul>
+                        <div class="pricing-options">
+                            <div class="price-option" data-period="1">
+                                <span class="period">1 Mes</span>
+                                <span class="price">$9.000 COP</span>
+                            </div>
+                            <div class="price-option" data-period="2">
+                                <span class="period">2 Meses</span>
+                                <span class="price">$15.000 COP</span>
+                            </div>
+                            <div class="price-option best-value" data-period="12">
+                                <span class="best-tag">Mejor Precio</span>
+                                <span class="period">1 Año</span>
+                                <span class="price">$80.000 COP</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary btn-block" onclick="openModal('Prime Video')">
+                            Comprar Ahora
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beneficios -->
+    <section class="benefits" id="beneficios">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">¿Por qué elegirnos?</span>
+                <h2 class="section-title">Beneficios Exclusivos</h2>
+                <p class="section-subtitle">Tu satisfacción es nuestra prioridad</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">⚡</div>
+                    <h3>Entrega Inmediata</h3>
+                    <p>Recibe tus credenciales al instante después de confirmar el pago</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🛡️</div>
+                    <h3>Garantía Total</h3>
+                    <p>Garantía de funcionamiento durante todo el período contratado</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">💰</div>
+                    <h3>Mejores Precios</h3>
+                    <p>Hasta 60% de descuento en comparación con precios oficiales</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🎧</div>
+                    <h3>Soporte 24/7</h3>
+                    <p>Atención personalizada por WhatsApp todos los días</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🔒</div>
+                    <h3>Pago Seguro</h3>
+                    <p>Nequi, Daviplata, Bancolombia y más métodos seguros</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">⭐</div>
+                    <h3>Clientes Satisfechos</h3>
+                    <p>Miles de reseñas positivas avalan nuestra calidad</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="testimonials" id="testimonios">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Testimonios</span>
+                <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Excelente servicio! Compré Netflix y Spotify, todo funcionó
+                        perfectamente desde el primer momento. Muy recomendado."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">CM</div>
+                        <div class="author-info">
+                            <span class="author-name">Carlos M.</span>
+                            <span class="author-service">Netflix + Spotify</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Llevó más de 6 meses con YouTube Premium y nunca he tenido problemas.
+                        El soporte es muy rápido y amable."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AL</div>
+                        <div class="author-info">
+                            <span class="author-name">Andrea L.</span>
+                            <span class="author-service">YouTube Premium</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Los precios son increíbles y la entrega fue instantánea. Ya recomendé a
+                        todos mis amigos este servicio."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JP</div>
+                        <div class="author-info">
+                            <span class="author-name">Juan P.</span>
+                            <span class="author-service">Disney+ & HBO</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">FAQ</span>
+                <h2 class="section-title">Preguntas Frecuentes</h2>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Cómo funcionan las cuentas?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Te proporcionamos credenciales de acceso a cuentas premium compartidas. Tendrás tu propio
+                            perfil dentro de la cuenta, garantizando privacidad y una experiencia personalizada.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Cuánto tiempo dura la garantía?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>La garantía cubre todo el período contratado. Si tienes algún problema con tu cuenta, te la
+                            reemplazamos inmediatamente sin costo adicional.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Qué métodos de pago aceptan?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Aceptamos Nequi, Daviplata, Bancolombia, transferencias bancarias y criptomonedas. Elige el
+                            método que más te convenga.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Cuánto tarda la entrega?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>La entrega es inmediata. Una vez confirmado el pago, recibirás las credenciales de acceso en
+                            cuestión de minutos por WhatsApp o correo electrónico.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Puedo usar la cuenta en varios dispositivos?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Sí, puedes acceder desde tu celular, tablet, computador o Smart TV. El número de dispositivos
+                            simultáneos depende del plan de cada plataforma.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="contact" id="contacto">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <span class="section-badge">Contáctanos</span>
+                    <h2 class="section-title">¿Listo para empezar?</h2>
+                    <p>Escríbenos y te atenderemos al instante. Resolvemos todas tus dudas y procesamos tu pedido de
+                        inmediato.</p>
+                    <div class="contact-methods">
+                        <a href="https://wa.me/573053976431?text=Hola!%20Me%20interesa%20comprar%20una%20cuenta%20de%20streaming"
+                            class="contact-method whatsapp" target="_blank">
+                            <span class="contact-icon">📱</span>
+                            <span>WhatsApp</span>
+                        </a>
+                        <a href="mailto:ventas@streamplus.com" class="contact-method email">
+                            <span class="contact-icon">✉️</span>
+                            <span>Email</span>
+                        </a>
+                        <a href="https://t.me/streamplus" class="contact-method telegram" target="_blank">
+                            <span class="contact-icon">💬</span>
+                            <span>Telegram</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-cta">
+                    <div class="cta-card">
+                        <h3>¡Oferta Especial!</h3>
+                        <p>Compra 2 servicios y obtén <strong>15% de descuento</strong></p>
+                        <a href="https://wa.me/573053976431?text=Hola!%20Quiero%20aprovechar%20la%20oferta%20de%2015%25%20de%20descuento"
+                            class="btn btn-primary btn-lg" target="_blank">
+                            Aprovechar Oferta
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-icon">▶</span>
+                        StreamPlus
+                    </a>
+                    <p>Tu tienda de confianza para cuentas de streaming premium al mejor precio en Colombia.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                        <a href="#" class="social-link" aria-label="Facebook">👤</a>
+                        <a href="#" class="social-link" aria-label="TikTok">🎵</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#beneficios">Beneficios</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="#servicios">Netflix</a></li>
+                        <li><a href="#servicios">Spotify</a></li>
+                        <li><a href="#servicios">YouTube Premium</a></li>
+                        <li><a href="#servicios">Disney+</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><a href="https://wa.me/573053976431" target="_blank">WhatsApp</a></li>
+                        <li><a href="mailto:ventas@streamplus.com">Email</a></li>
+                        <li><a href="https://t.me/streamplus" target="_blank">Telegram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 StreamPlus Colombia. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal" id="purchaseModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <div class="modal-header">
+                <h3>¡Excelente elección!</h3>
+            </div>
+            <div class="modal-body">
+                <p>Has seleccionado:</p>
+                <div class="modal-product">
+                    <span id="modalService">Netflix</span>
+                </div>
+                <div class="modal-pricing">
+                    <h4>Elige tu plan:</h4>
+                    <div class="modal-price-options">
+                        <label class="modal-option">
+                            <input type="radio" name="plan" value="1 Mes - $9.000 COP" checked>
+                            <span class="option-content">
+                                <span class="option-period">1 Mes</span>
+                                <span class="option-price">$9.000 COP</span>
+                            </span>
+                        </label>
+                        <label class="modal-option">
+                            <input type="radio" name="plan" value="2 Meses - $15.000 COP">
+                            <span class="option-content">
+                                <span class="option-period">2 Meses</span>
+                                <span class="option-price">$15.000 COP</span>
+                            </span>
+                        </label>
+                        <label class="modal-option recommended">
+                            <input type="radio" name="plan" value="1 Año - $80.000 COP">
+                            <span class="recommended-badge">Mejor Precio</span>
+                            <span class="option-content">
+                                <span class="option-period">1 Año</span>
+                                <span class="option-price">$80.000 COP</span>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+                <p class="modal-note">Para completar tu compra, contáctanos por WhatsApp.</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#" id="modalWhatsApp" class="btn btn-primary btn-lg btn-block" target="_blank">
+                    📱 Contactar por WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
