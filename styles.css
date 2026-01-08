@@ -428,6 +428,13 @@ section {
     fill: white;
 }
 
+.service-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 14px;
+    object-fit: cover;
+}
+
 .netflix-bg {
     background: linear-gradient(135deg, #e50914 0%, #b81d24 100%);
 }
@@ -450,6 +457,38 @@ section {
 
 .prime-bg {
     background: linear-gradient(135deg, #00a8e1 0%, #0077b5 100%);
+}
+
+.paramount-bg {
+    background: linear-gradient(135deg, #0064ff 0%, #0049cb 100%);
+}
+
+.viki-bg {
+    background: linear-gradient(135deg, #00aff0 0%, #0082b3 100%);
+}
+
+.crunchyroll-bg {
+    background: linear-gradient(135deg, #f47521 0%, #d65a0b 100%);
+}
+
+.mubi-bg {
+    background: linear-gradient(135deg, #002766 0%, #001233 100%);
+}
+
+.universal-bg {
+    background: linear-gradient(135deg, #ffcc00 0%, #d4aa00 100%);
+}
+
+.vix-bg {
+    background: linear-gradient(135deg, #ff4e00 0%, #cc3e00 100%);
+}
+
+.tidal-bg {
+    background: linear-gradient(135deg, #18191c 0%, #000000 100%);
+}
+
+.deezer-bg {
+    background: linear-gradient(135deg, #a238ff 0%, #801cc9 100%);
 }
 
 .service-name {
